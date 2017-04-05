@@ -37,6 +37,10 @@
                BlueprintName = "UI Test"
                ReferencedContainer = "container:Location Command Line Build Test.xcodeproj">
             </BuildableReference>
+            <LocationScenarioReference
+               identifier = "London, England"
+               referenceType = "1">
+            </LocationScenarioReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>

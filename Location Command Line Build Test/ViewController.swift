@@ -8,6 +8,12 @@ class ViewController: UIViewController {
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
+
+		let status = CLLocationManager.authorizationStatus()
+		if status != .authorizedWhenInUse {
+			locationManager.requestWhenInUseAuthorization()
+		}
+
 		locationManager.delegate = self
 		locationManager.startUpdatingLocation()
 	}
